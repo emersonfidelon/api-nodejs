@@ -1,8 +1,6 @@
-import { mongo } from 'mongoose';
-
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/noderest', { useMongoClient: true });
+mongoose.connect('mongodb://localhost/noderest');
 mongoose.Promise = global.Promise;
 
 module.exports = mongoose;
